@@ -37,13 +37,13 @@ namespace OxyPlot
         /// Gets or sets the X axis.
         /// </summary>
         /// <value>The X axis.</value>
-        protected Axis XAxis { get; set; }
+        public Axis XAxis { get; set; }
 
         /// <summary>
         /// Gets or sets the Y axis.
         /// </summary>
         /// <value>The Y axis.</value>
-        protected Axis YAxis { get; set; }
+        public Axis YAxis { get; set; }
 
         /// <summary>
         /// Transforms a point from screen coordinates to data coordinates.
