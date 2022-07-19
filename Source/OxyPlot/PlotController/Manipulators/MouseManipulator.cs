@@ -34,7 +34,8 @@ namespace OxyPlot
         /// <param name="e">The <see cref="OxyInputEventArgs" /> instance containing the event data.</param>
         public override void Started(OxyMouseEventArgs e)
         {
-            this.AssignAxes(e.Position);
+            if (this.XAxis == null || this.YAxis == null)
+                this.AssignAxes(e.Position);
             base.Started(e);
             this.StartPosition = e.Position;
         }
